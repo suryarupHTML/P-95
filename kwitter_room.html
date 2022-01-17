@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kwitter</title>
+        <link rel="stylesheet" type="text/css" href="kwitter_room.css">
+        <script src="kwitter_room.js"></script>
+    </head>
+    <body>
+        <center>
+            <span>
+                <h1>KWITTER</h1>
+                <button class="btn btn-danger" id="btn-logOut" onclick="logOut()">Log Out</button>
+            </span>
+            <br>
+            <br>
+            <div>
+                <span><h2 id="username"></h2></span>
+                <br>
+                <h3>Room Name: </h3>
+                <input type="text" placeholder="Enter Room Name" id="room_name">
+                <br>
+                <br>
+                <button id="btn-room_name" class="btn btn-success" onclick="addRoom()">Add Room</button>
+            </div>
+            <div id="div_room_names" class="container" onclick="redirectToRoomName()">
+            </div>
+        </center>
+    </body>
+</html>
